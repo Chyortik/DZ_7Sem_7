@@ -39,11 +39,12 @@ Console.WriteLine();
 Console.Write($"\nCреднее арифметическое:\n");
 for (int i = 0; i < column; i++)
 {
-    int arithmeticMean = 0;
+    double arithmeticMean = 0;
     for (int j = 0; j < row; j++)
     {
         arithmeticMean += array[j, i];
     }
     arithmeticMean = arithmeticMean / row;
-    Console.WriteLine($"столбца {i + 1} = {arithmeticMean}");
+    Console.WriteLine($"столбца {i + 1} = {Math.Round(arithmeticMean, 1)}");
 }
+
